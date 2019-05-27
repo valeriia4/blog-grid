@@ -1,0 +1,148 @@
+*{
+	box-sizing: border-box;
+}
+@font-face {
+    font-family: 'hanskendrick';
+    src: url('fonts/hanskendrick-regular-webfont.woff2') format('woff2'),
+         url('fonts/hanskendrick-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+html{
+	font-size: 12px;
+}
+body{
+	background-color: #e2e7e7;
+	margin: 0;
+	padding-top: 5.625vw;
+	color: #1d1d1d;
+	font-family: 'HansKendrick', sans-serif;
+}
+a{
+	text-decoration: none;
+	color: inherit;
+}
+img{
+	display: inline-block;
+	max-width: 100%;
+}
+.ba-container{
+	max-width: 1140px;
+	padding: 0 10px;
+	margin: 0 auto;
+}
+.ba-row{
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0 -10px;
+}
+.ba-col{
+	padding: 0 10px; 
+	width: 100%;
+	margin-bottom: 20px;
+}
+.visually-hidden{
+   position: absolute !important;
+   clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+   clip: rect(1px, 1px, 1px, 1px);
+   padding:0 !important;
+   border:0 !important;
+   height: 1px !important;
+   width: 1px !important;
+   overflow: hidden;
+}
+
+.article{
+	width: 100%;
+	background-color: #fff;
+}
+.article__big{
+	position: relative;
+	flex-grow: 1;
+}
+.article__big .article__info{
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	padding: 0 15px 15px;
+}
+.article__info{
+	padding: 15px 15px 15px 15px;
+}
+.article__title{
+font-size: 1.375rem;
+line-height: 1.3636;
+text-transform: uppercase;
+margin: 0 0 2.0666em;
+}
+.article__title_big{
+font-style: 1.875rem;
+color: #fff;
+line-height: 1.2;
+text-transform: uppercase;
+margin-bottom: 0;
+}
+.article__time{
+	text-transform: uppercase;
+	font-size: 0.8126rem;
+	line-height: 2.3;
+	color: #818181;
+}
+.article-autor__img{
+	width: 56px;
+	height: 56px;
+	border-radius: 50%;
+	opacity: 1;
+}
+.time{
+	visibility: hidden;
+}
+.article__img{
+}
+.load__files{
+  font-size: 13px;
+  font-family: 'HansKendrick', sans-serif;
+  color: rgb(153, 165, 176);
+  text-transform: uppercase;
+  line-height: 2.308;
+  text-align: center;
+}
+.load{
+	margin-right: 15px;
+	margin-bottom: 5px;
+}
+.load:hover{
+	  transform: rotateZ(90deg);
+}
+a:hover{
+	color:  #005099;
+}
+.article-autor__img:hover{
+	opacity: 0.6; 
+}
+@media screen and (min-width: 1023px){
+html{
+	font-size: 16px;
+}
+	.ba-col{
+		width: 33.333%;
+	}
+	.ba-col_big{
+		width: auto;
+		flex-grow: 1;
+	}
+	.article{
+		height: 540px;
+	}
+	.autor{
+		margin-top: 70px;
+	}
+	body{
+		height: 1400px;
+	}
+	.load__files{
+		 margin-top: 75px;
+	}
+}
